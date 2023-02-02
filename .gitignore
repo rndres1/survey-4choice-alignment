@@ -1,2 +1,5 @@
 jspsych/*
 media/*
+ntlToken
+# Local Netlify folder
+.netlify
