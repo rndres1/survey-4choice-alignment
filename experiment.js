@@ -1,6 +1,3 @@
-const image_names = [
-    './media/Surprise.png',
-]
 
 const jsPsych = initJsPsych({
     on_finish: function() {
