@@ -4,7 +4,7 @@ const n_trials = 10;
 // ======== END OF PARAMS =======
 
 const jsPsych = initJsPsych({
-    show_progress_bar: true
+    show_progress_bar: true,
     on_finish: function() {
     jsPsych.data.displayData();
 }
@@ -31,6 +31,7 @@ for (i=0;i<n_trials;i++)
     rindx = random_sample_without_replacement(4,filenames.length);
     image_set = [image_names[rindx[0]], image_names[rindx[1]], image_names[rindx[2]], image_names[rindx[3]]];
     image_set_used.push(image_set);
+    console.log(image_set);
 }
 
 var preload = {

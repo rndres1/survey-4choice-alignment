@@ -59,7 +59,7 @@ var myplugin2 = (function (jspsych) {
       //console.log(html_content);
       display_element.innerHTML = html_content;
       var start_time = performance.now();
-      console.log(start_time)
+      //console.log(start_time)
 
       /* 
       ============ pasted from ChatGPT ==========
@@ -76,7 +76,7 @@ var myplugin2 = (function (jspsych) {
         // Add border to currently selected image
           image.style.border = '10px solid #95ae48';
           selectedImageId = image.id;
-          console.log(selectedImageId);
+          //console.log(selectedImageId);
           document.getElementById("selectedImageId").value = selectedImageId;
 
           var nextbutton_element = document.getElementById("nextButton");
@@ -89,7 +89,7 @@ var myplugin2 = (function (jspsych) {
 
       const after_mouse_response = () => {  
         var end_time = performance.now();
-        console.log(end_time)
+        //console.log(end_time)
         var calculated_rt = Math.round(end_time - start_time);
         
         // record the data
@@ -98,7 +98,7 @@ var myplugin2 = (function (jspsych) {
           rt: calculated_rt,
           selectedImageId: document.getElementById("selectedImageId").value,
         }        
-        console.log(data_saved);
+        //console.log(data_saved);
         // clear the HTML stuff that was previously created
         display_element.innerHTML = '';    
         

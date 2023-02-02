@@ -79,7 +79,6 @@ var filenames=[
 "dalle-a robot expressing the emotion shock-1669786796.png",
 "dalle-a robot expressing the emotion shock-1669787914.png",
 "dalle-a robot expressing the emotion shock-1669789097.png",
-"imlist",
 "sd-a person expressing the emotion affection-234.png",
 "sd-a person expressing the emotion affection-2389.png",
 "sd-a person expressing the emotion affection-42.png",
