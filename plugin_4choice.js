@@ -1,8 +1,8 @@
-var myplugin2 = (function (jspsych) {
+var plugin_4choice = (function (jspsych) {
   "use strict";
 
   const info = {
-    name: "myplugin2",
+    name: "plugin_4choice",
     parameters: {
       image_fnames: {
         type: jspsych.ParameterType.IMAGE,
@@ -15,7 +15,7 @@ var myplugin2 = (function (jspsych) {
     },
   };
 
-  class myplugin2 {
+  class plugin_4choice {
     constructor(jsPsych) {
       this.jsPsych = jsPsych;
     }
@@ -36,20 +36,24 @@ var myplugin2 = (function (jspsych) {
       
       // show image
       let html_content = `
-      <div>
-      <h2>
+      <div class="instruction-text">
       ${trial.instruction}
-      </h2>
+      </div>
+      <div class="instruction-text-prompt">
+      ${trial.alignPrompt}
       </div>
       <div class="outer-container">
         <div class="container">
             <img src="${trial.image_fnames[0]}" class="image" id="image01">
             <img src="${trial.image_fnames[1]}" class="image" id="image02">
+        </div>
+        <div class="container">
             <img src="${trial.image_fnames[2]}" class="image" id="image03">
             <img src="${trial.image_fnames[3]}" class="image" id="image04">      
+        </div>
         <div>
           <button class="next-button" disabled id="nextButton">Next</button>
-      </div>
+        </div>
       </div>
       </div>
       <div>
@@ -127,7 +131,7 @@ var myplugin2 = (function (jspsych) {
 
     }// trial function ends
   }
-  myplugin2.info = info;
+  plugin_4choice.info = info;
 
-  return myplugin2;
+  return plugin_4choice;
 })(jsPsychModule);

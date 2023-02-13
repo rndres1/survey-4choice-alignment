@@ -1,20 +1,53 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("./Nunito.ttf");
+}
+
 .outer-container {
   display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 80%;
+    height: 70%;
     position: relative;
     max-width: 800px;
     /* max-height: 100px; */
   }
   .container {
     display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    position: relative;
+  }
+
+  .button-container {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 90%;
+    width: 95%;
     position: relative;
+  }
+
+  .instruction-text {
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Nunito";
+    font-size: 23px;
+    padding-bottom: 10px;
+
+  }
+
+  .instruction-text-prompt {
+    font-style: normal;
+    font-stretch:expanded;
+    font-family: "Nunito";
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 30px;
   }
 
   .padding {
@@ -29,14 +62,14 @@
 
   .next-button {
     position: relative;
-    bottom: 9px;
+    bottom: 16px;
     left: 50%;
-    margin-top: 20px;
+    margin-top: 70px;
     transform: translateX(-50%);
     width: 250px;
-    height: 35px;
-    font-size: 23px;
-    border-radius: 10px;
+    height: 75px;
+    font-size: 25px;
+    border-radius: 15px;
   }
 
   @media (min-width: 960px) {
